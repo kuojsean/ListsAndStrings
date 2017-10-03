@@ -7,7 +7,7 @@ import javax.swing.JOptionPane;
  * @author Sean Kuo
  * @version 1.0 03.10.2017
  */
-public class PopupDislay
+public class PopupDisplay
 {
 	/**
 	 * Displays the supplied message in a popup window.
