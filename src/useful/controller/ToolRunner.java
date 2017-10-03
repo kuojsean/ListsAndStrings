@@ -3,7 +3,7 @@ package useful.controller;
 /**
  * 
  * 
- * @author skuo7320
+ * @author Sean Kuo
  *
  */
 
