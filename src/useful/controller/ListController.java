@@ -7,12 +7,12 @@ import useful.view.PopupDisplay;
 
 //imported the model and list functions
 
-public class ToolController
+public class ListController
 {
 	private List<Donut> donutList;
 	private PopupDisplay display;
 	
-	public ToolController()
+	public ListController()
 	{
 		donutList = new ArrayList<Donut>();
 		display = new PopupDisplay();
@@ -115,6 +115,15 @@ public class ToolController
 		}
 		
 	}
+
+	public ArrayList<Donut> getDonutList()
+	{
+		return (ArrayList<Donut>) donutList;
+	}
 	
+	public PopupDisplay getDisplay()
+	{
+		return display;
+	}
 }
 
