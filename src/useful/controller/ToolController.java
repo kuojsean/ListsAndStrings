@@ -107,6 +107,13 @@ public class ToolController
 		donutList.add(new Donut ("Wacky"));
 		display.displayText("A wacky donut was created and added just now");
 		
+		int indexNew = 0;
+		while  (indexNew < donutList.size())
+		{
+			String currentDonutFlavor = donutList.get(indexNew).getFlavor();
+			display.displayText(donutList.get(indexNew).toString());
+			indexNew +=1;
+		}
 		
 	}
 	
