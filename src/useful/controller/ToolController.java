@@ -101,6 +101,13 @@ public class ToolController
 		Donut getDonut = donutList.get(0);
 		display.displayText("The 2nd Donut is " + getDonut.getFlavor() + " flavor");
 		
+		Donut addIndexDonut = new Donut("Sriracha");
+		donutList.add(3, addIndexDonut);
+		display.displayText(addIndexDonut.getFlavor() + " donut was added into the 3rd spot");
+		donutList.add(new Donut ("Wacky"));
+		display.displayText("A wacky donut was created and added just now");
+		
+		
 	}
 	
 }
