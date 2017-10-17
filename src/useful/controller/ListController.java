@@ -88,6 +88,36 @@ public class ListController
 		
 	}
 	
+//	public int getMax(ArrayList<String> myList)
+//	{
+//		int max = 0;
+//		
+//		for(int index = 0; index < myList.size(); index +=1)
+//		{
+//			if(myList.get(index).length() > max)
+//			{
+//				max = myList,getMax(index).length();
+//			}
+//		}
+//		return max;
+//	}
+	
+	public String getLongestString(ArrayList<String> myList)
+	{
+		String longest = "";
+		int max= 0;
+		
+		for(int index = 0; index < myList.size(); index +=1)
+		{
+			if(myList.get(index).length() > max)
+			{
+				max = myList.get(index).length();
+				longest = myList.get(index);
+			}
+		}
+		return longest;
+	}
+	
 	private void practiceTheList()
 	{
 		display.displayText("We're going to change the donut list a little bit");
